@@ -1,6 +1,6 @@
-
 # someone needs to check the accuracy of these numbers I just put in some arbitrary ones
 import random
+import pandas as pd
 import math
 
 class Scheduler:
@@ -18,12 +18,55 @@ class Scheduler:
         self.p_num = p_num
         self.weight = [0.3, 0.3, 0.4] # arbitrary weightings for all the factors - need to change
         # team coordinates
-        self.team_locations = [{2, 3}, {4,5}, {5, 6}, {2,3}, {10, 2}, {4,7}, {9,6}, {13,5}, {5,5},{12,10},{13, 1}, {20, 1}, {4,3}, {6,7}, {2,9}, {14, 3}, {12, 3}, {1, 2}, {9, 10}, {13, 2}]
+        self.team_locations = [ # Oceania
+                                (-25.274398, 133.775136), # Austrailia
+                                ( 37.09024, -95.712891),    # USA
+                                ( 23.634501, -102.552784),  # Mexico
+
+                                # Central America
+                                ( 9.748917, -83.753428),    # Costa Rica
+                                ( 8.537981, -80.782127),    # Panama
+
+                                # South America
+                                (-38.416097, -63.616672),   # Argentina
+                                ( -14.235004, -51.92528),   # Brazil
+                                (-32.522779, -55.765835),   # Uruguay
+                                ( 4.570868, -74.297333),    # Colombia
+
+                                # Europe
+                                ( 46.603354, 1.888334),     # France
+                                ( 40.463667, -3.74922),     # Spain
+                                ( 52.132633, 5.291266),     # Netherlands
+                                ( 55.378051, -3.435973),    # England (United Kingdom)
+                                ( 39.399872, -8.224454),    # Portugal
+
+                                # Africa
+                                ( 31.791702, -7.09262),     # Morocco
+                                ( 14.497401, -14.452362),   # Senegal
+
+                                # Asia
+                                ( 36.204824, 138.252924),   # Japan
+                                ( 14.058324, 108.277199),   # Vietnam
+                                ( 32.427908, 53.688046),    # Iran
+                                ( 38.963745, 35.243322)]
         self.distance_by_team = []
 
+        # groupings that mars did
+        self.rounds = [[[0,1,2,3], [4,5,6,7], [8,9,10,11], [12,13,14,15], [16,17,18,19]],
+                        [[0,5,9,15],[4,9,14,19],[8,13,18,3],[12,17,2,7],[16,1,6,11]],
+                        [[0,9,18,7],[5,13,2,11],[8,17,6,15],[12,1,10,19],[16,5,14,3]],
+                        [[0,13,14,11],[4,1,18,19],[8,1,14,7],[12,5,18,11],[16,9,2,15]],
+                        [[0,17,14,11],[4,2,18,15],[8,5,2,19],[12,9,6,3],[16,13,10,7]],
+                        # [[0,4,8,12,16],[1,5,9,13,17],[2,6,10,14,18],[3,7,11,15,19]]
+                        ]
+
+        # airport dataset
+        venues = pd.read_csv("venues.csv", header=None)
+        self.venue_locations = list(zip(venues[0], venues[1]))
+
     # objective function
-    def objective(self,x):
-        return self.fairness(x)*self.weight[0] + self.sustainability(x)*self.weight[1] + self.cost_per_team(x)*self.weight[2]
+    # def objective(self,x):
+    #     return self.fairness(x)*self.weight[0] + self.sustainability(x)*self.weight[1] + self.cost_per_team(x)*self.weight[2]
 
     def fairness(self,x):
         n = len(self.distance_by_team)
@@ -39,37 +82,44 @@ class Scheduler:
         return (0.1*min(x,18500-x)+100+100*x)*self.p_num
 
     # ----------------------------------------simulated annealing---------------------------------------------------
-    def get_distances(self, groups):
-        for i in range(5):
-            group = groups[i*5:i*5+5]
-            median_x = sum(group[j][0] for j in range len(group))/4
-            median_y = sum(group[j][1] for j in range len(group))/4
-            distances = [(abs(group[j][0]-median_x))**2+(abs(group[j][1]-median_y))**2 for j in range len(group)]
-        return distances
+    '''
+    We will have two processes to optimize the location and the groupings. 
+    The processes can be separate since we assume the location to be somewhere at the midpoint of the 4 teams for each 4 teams.
+    The locations can be optimized in another process after the groupings have been finalized.
+    We calculate the total distances each grouping would need, and swap groups to optimize them.
+    '''
+    def objective(self):
+        total_distance = 0
+        # calculate the total distance
+        for round in self.rounds:
+            for group in round:
+                # find midpoint
+                median_x = sum(self.team_locations[self.teams[group[j]]][0] for j in range(len(group)))/4
+                median_y = sum(self.team_locations[self.teams[group[j]]][1] for j in range(len(group)))/4
+                total_distance+=sum(math.sqrt((self.team_locations[self.teams[group[j]]][0] - median_x) ** 2 + (self.team_locations[teams[group[j]]][1] - median_y) ** 2) for j in range(len(group)))
+        return total_distance
     
-    def get_neighbor(self, groups, step_size):
+    def get_neighbor(self, teams, step_size):
         # swap a team in two randomly selected groups
         for i in range(step_size):
-            g1, g2 = random.sample(range(20), 2)
-            groups[g1], groups[g2] = groups[g2], groups[g1]
-        return groups
-
+            t1, t2 = random.sample(range(20), 2)
+            teams[t1], teams[t2] = teams[t2], teams[t1]
+        return teams
 
     # simulated annealing function
     def optimize(self, n_iter, step_size, temp):
         # initial state
-        teams_copy = self.teams[:].copy()
-        random.shuffle(teams_copy)
-        groups = [teams_copy[i:i+4] for i in range(0, len(teams_copy), 4)] #groups of 4
-        best = self.objective()
-        distances = self.get_distances(groups)
-        best_eval = sum(self.objective(distances[j]) for j in len(distances))
+        random.shuffle(self.teams)
+        best = self.teams.copy()
+        best_eval = self.objective() # objective function is get_distances for now
+        # distances = self.get_distances(teams)
+        # best_eval = sum(self.objective(distances[j]) for j in len(distances))
         scores = [best_eval]
 
         for i in range(n_iter):
             # get distances
-            distances = self.get_distances(groups)
-            total_cost = sum(self.objective(distances[j]) for j in len(distances))
+            # distances = self.get_distances()
+            total_cost = self.objective()
         
             t = temp / float(i + 1)
             # Generate candidate solution
@@ -86,3 +136,30 @@ class Scheduler:
 
         return best, best_eval, scores
     
+
+    # --------------------------------------------------weighting function----------------------------------------------------------
+    def ipf(a,b,c, tolerance, target = [0.3,0.3,0.4]):
+        '''
+        a, b, c - three factors
+        tolerance - the error we are willing to have
+        target - some target weighting that we arbitrarily decide
+        '''
+        weights = [0.3,0.3,0.4] # initial weights
+        # iterate
+        while(True):
+            c_i = [a*weights[0], b*weights[1], c*weights[2]]
+            c_total = sum(c_i)
+            p_i = [c_i[i]/c_total for i in range(len(c_i))]
+            weights = [weights[i]*target[i]/p_i[i] for i in range(len(weights))]
+            # normalize new weights
+            denom = sum(weights)
+            weights = [weights[i]/denom for i in range(weights)]
+            
+            # check convergence
+            diff = sum(abs(weights[i]-target[i]) for i in range(len(target)))
+            if(diff<tolerance):
+                break
+
+        return weights
+
+    #-------------------------------------------------timings----------------------------------------------------
