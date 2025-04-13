@@ -1,4 +1,3 @@
-# someone needs to check the accuracy of these numbers I just put in some arbitrary ones
 import random
 import pandas as pd
 import math
@@ -57,7 +56,7 @@ class Scheduler:
                         [[0,9,18,7],[5,13,2,11],[8,17,6,15],[12,1,10,19],[16,5,14,3]],
                         [[0,13,14,11],[4,1,18,19],[8,1,14,7],[12,5,18,11],[16,9,2,15]],
                         [[0,17,14,11],[4,2,18,15],[8,5,2,19],[12,9,6,3],[16,13,10,7]],
-                        # [[0,4,8,12,16],[1,5,9,13,17],[2,6,10,14,18],[3,7,11,15,19]]
+                        [[0,4,8,12,16],[1,5,9,13,17],[2,6,10,14,18],[3,7,11,15,19]]
                         ]
 
         # airport dataset
@@ -95,8 +94,8 @@ class Scheduler:
         for round in self.rounds:
             for group in round:
                 # find midpoint
-                median_x = sum(self.team_locations[self.teams[group[j]]][0] for j in range(len(group)))/4
-                median_y = sum(self.team_locations[self.teams[group[j]]][1] for j in range(len(group)))/4
+                median_x = sum(self.team_locations[self.teams[group[j]]][0] for j in range(len(group)))/len(group)
+                median_y = sum(self.team_locations[self.teams[group[j]]][1] for j in range(len(group)))/len(group)
                 total_distance+=sum(math.sqrt((self.team_locations[self.teams[group[j]]][0] - median_x) ** 2 + (self.team_locations[self.teams[group[j]]][1] - median_y) ** 2) for j in range(len(group)))
         return total_distance
     
@@ -109,25 +108,21 @@ class Scheduler:
 
     # simulated annealing function
     def optimize(self, n_iter, step_size, temp):
-        # initial state
+        # Initial state
         random.shuffle(self.teams)
-        best = self.teams.copy()
-        best_eval = self.objective() # objective function is get_distances for now
-        # distances = self.get_distances(teams)
-        # best_eval = sum(self.objective(distances[j]) for j in len(distances))
+        current = self.teams.copy()  # Initialize 'current' with the shuffled teams
+        current_eval = self.objective()  # Evaluate the initial state
+        best = current.copy()
+        best_eval = current_eval
         scores = [best_eval]
 
         for i in range(n_iter):
-            # get distances
-            # distances = self.get_distances()
-            total_cost = self.objective()
-        
             t = temp / float(i + 1)
             # Generate candidate solution
             candidate = self.get_neighbor(current, step_size)
-            candidate_eval = self.objective(candidate)
+            candidate_eval = self.objective()
             # Check if we should keep the new solution
-            if candidate_eval < best_eval or random.random() < math.exp((current_eval - candidate_eval) / t):
+            if candidate_eval < current_eval or random.random() < math.exp((current_eval - candidate_eval) / t):
                 current, current_eval = candidate, candidate_eval
                 if candidate_eval < best_eval:
                     best, best_eval = candidate, candidate_eval
@@ -136,42 +131,11 @@ class Scheduler:
             print(f"Iteration {i}, Temperature {t:.3f}, Best Evaluation {best_eval:.5f}")
 
         return best, best_eval, scores
-    
 
-    # --------------------------------------------------weighting function----------------------------------------------------------
-    def ipf(a,b,c, tolerance, target = [0.3,0.3,0.4]):
-        '''
-        a, b, c - three factors
-        tolerance - the error we are willing to have
-        target - some target weighting that we arbitrarily decide
-        '''
-        weights = [0.3,0.3,0.4] # initial weights
-        # iterate
-        while(True):
-            c_i = [a*weights[0], b*weights[1], c*weights[2]]
-            c_total = sum(c_i)
-            p_i = [c_i[i]/c_total for i in range(len(c_i))]
-            weights = [weights[i]*target[i]/p_i[i] for i in range(len(weights))]
-            # normalize new weights
-            denom = sum(weights)
-            weights = [weights[i]/denom for i in range(weights)]
-            
-            # check convergence
-            # diff = sum(abs(weights[i]-target[i]) for i in range(len(target)))
-            diff = sum(abs(p_i[i] - target[i]) for i in range(len(target)))
-
-            if(diff<tolerance):
-                break
-
-        return weights
-
-    #-------------------------------------------------locations----------------------------------------------------
-    '''
-    This happens after we have already gotten the best array from the optimize() function.
-    '''
-    # def optimize_location(self, best):
+        
 
 
 s = Scheduler(20)
 best = s.optimize(100, 1, 0.1)
+
 print(best)

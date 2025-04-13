@@ -1,0 +1,307 @@
+42.2813722	-83.7484616	Ann Arbor, Michigan, United States
+39.9622601	-83.0007065	Columbus, Ohio, United States
+-37.8142454	144.9631732	Melbourne, Victoria, Australia
+41.3828939	2.1774322	Barcelona, Catalonia, Spain
+-26.205	28.049722	Johannesburg, Gauteng, South Africa
+30.023829	31.7549459	New Administrative Capital, Egypt
+34.1476507	-118.144155	Pasadena, California, United States
+32.7762719	-96.7968559	Dallas, Texas, United States
+51.5074456	-0.1277653	London, England
+25.4228888	51.5197163	Lusail, Qatar
+19.4326296	-99.1331785	Mexico City, Mexico
+3.1526589	101.7022205	Kuala Lumpur, Malaysia
+31.1991806	29.8951716	Alexandria, Egypt
+40.4167047	-3.7035825	Madrid, Spain
+-34.6083696	-58.4440583	Buenos Aires, Argentina
+-33.8698439	151.2082848	Sydney, New South Wales, Australia
+40.833989	-74.0970865	East Rutherford, New Jersey, United States
+53.3493795	-6.2605593	Dublin, Ireland
+-6.1754049	106.827168	Jakarta, Indonesia
+44.5126379	-88.0125794	Green Bay, Wisconsin, United States
+51.5142273	7.4652789	Dortmund, Germany
+48.935773	2.3580232	Saint-Denis, France
+55.625578	37.6063916	Moscow, Russia
+3.0739429	101.5185278	Shah Alam, Selangor, Malaysia
+-12.0621065	-77.0365256	Lima, Peru
+45.4641943	9.1896346	Milan, Lombardy, Italy
+23.1301964	113.2592945	Guangzhou, Guangdong, China
+30.2489634	120.2052342	Hangzhou, Zhejiang, China
+32.7355816	-97.1071186	Arlington, Texas, United States
+-4.3196982	15.3424196	Kinshasa, DR Congo
+40.190632	116.412144	Beijing, China
+-22.9110137	-43.2093727	Rio de Janeiro, Rio de Janeiro, Brazil
+34.0536909	-118.242766	Los Angeles, California, United States
+29.9759983	-90.0782127	New Orleans, Louisiana, United States
+39.100105	-94.5781416	Kansas City, Missouri, United States
+39.7392364	-104.984862	Denver, United States
+41.006381	28.9758715	Istanbul, Turkey
+53.4794892	-2.2451148	Manchester, England
+48.1371079	11.5753822	Munich, Germany
+35.2272086	-80.8430827	Charlotte, North Carolina, United States
+51.4816546	-3.1791934	Cardiff, Wales
+52.510885	13.3989367	Berlin, Germany
+30.0443879	31.2357257	Cairo, Egypt
+41.4996574	-81.6936772	Cleveland, United States
+-10.3333333	-53.2	Brasília, Brazil
+41.8933203	12.4829321	Rome, Lazio, Italy
+35.4503381	139.6343802	Yokohama, Kanagawa, Japan
+29.7589382	-95.3676974	Houston, Texas, United States
+31.2312707	121.4700152	Shanghai, China
+39.2908816	-76.610759	Baltimore, United States
+33.7489924	-84.3902644	Atlanta, Georgia, United States
+33.9562003	-118.353132	Inglewood, California, United States
+37.5666791	126.9782914	Seoul, South Korea
+40.3755885	49.8328009	Baku, Azerbaijan
+38.0562402	23.804941	Marousi, Attica, Greece
+47.6038321	-122.330062	Seattle, Washington, United States
+42.0653768	-71.2478308	Foxborough, Massachusetts, United States
+21.5504432	39.1742363	Jeddah, Saudi Arabia
+39.9527237	-75.1635262	Philadelphia, United States
+37.3541132	-121.955174	Santa Clara, California, United States
+40.4416941	-79.9900861	Pittsburgh, United States
+59.9606739	30.1586551	Saint Petersburg, Russia
+22.5726459	88.3638953	Kolkata, India
+35.6768601	139.7638947	Tokyo, Japan
+30.3321838	-81.655651	Jacksonville, Florida, United States
+43.2961743	5.3699525	Marseille, France
+47.48138955	19.14609413	Budapest, Hungary
+55.9533456	-3.1883749	Edinburgh, Scotland
+39.7683331	-86.1583502	Indianapolis, Indiana, United States
+-23.5506507	-46.6333824	São Paulo, São Paulo, Brazil
+38.6280278	-90.1910154	St. Louis, United States
+44.9772995	-93.2654692	Minneapolis, United States
+35.8713	128.6018	Daegu, South Korea
+27.9477595	-82.458444	Tampa, Florida, United States
+25.9420377	-80.2456045	Miami Gardens, Florida, United States
+45.5031824	-73.5698065	Montreal, Quebec, Canada
+30.4952371	47.8090981	Basra, Iraq
+28.5421109	-81.3790304	Orlando, Florida, United States
+29.4246002	-98.4951405	San Antonio, United States
+42.3315509	-83.0466403	Detroit, United States
+35.7625681	-5.829506182	Tangier, Morocco
+38.7077507	-9.1365919	Lisbon, Portugal
+36.7729333	3.0588445	Algiers, Algeria
+-3.7304512	-38.5217989	Fortaleza, Ceará, Brazil
+35.9754168	139.4160114	Saitama, Japan
+51.5110321	7.0960124	Gelsenkirchen, Germany
+36.0663249	120.3777659	Qingdao, Shandong, China
+-19.9227318	-43.9450948	Belo Horizonte, Minas Gerais, Brazil
+23.333333	45.333333	Riyadh, Saudi Arabia
+41.8755616	-87.6244212	Chicago, United States
+32.0438284	118.7788631	Nanjing, Jiangsu, China
+53.4071991	-2.99168	Liverpool, England
+37.3886303	-5.9953403	Seville, Spain
+9.0643305	7.4892974	Abuja, Nigeria
+48.7784485	9.1800132	Stuttgart, Germany
+55.861155	-4.2501687	Glasgow, Scotland
+-16.3988667	-71.5369607	Arequipa, Peru
+22.5445741	114.0545429	Shenzhen, Guangdong, China
+-34.9058916	-56.1913095	Montevideo, Uruguay
+-8.0584933	-34.8848193	Recife, Pernambuco, Brazil
+14.693425	-17.447938	Dakar, Senegal
+25.6837333	51.5031212	Al-Khor, Qatar
+-6.8160837	39.2803583	Dar es-Salaam, Tanzania
+31.8665676	117.281428	Hefei, Anhui, China
+36.8002068	10.1857757	Tunis, Tunisia
+28.64308585	77.21926706	New Delhi, India
+-15.4163395	28.2818414	Lusaka, Zambia
+44.0505054	-123.0950506	Eugene, Oregon, United States
+-25.5080556	28.0680556	Mabopane, Gauteng, South Africa
+11.5730391	104.857807	Phnom Penh, Cambodia
+41.8026095	123.4279105	Shenyang, Liaoning, China
+-31.9558933	115.8605855	Perth, Western Australia, Australia
+-17.8567035	31.0601584	Harare, Zimbabwe
+-2.2895167	-80.09838874	Guayaquil, Ecuador
+45.773606	4.9633314	Décines-Charpieu, France
+30.05518	107.8748712	Chongqing, China
+52.2337172	21.07143224	Warsaw, Poland
+41.1257843	16.8620293	Bari, Apulia, Italy
+38.92531295	-76.8815433	Landover, Maryland, United States
+50.1106444	8.6820917	Frankfurt, Germany
+35.7803977	-78.6390989	Raleigh, North Carolina, United States
+53.550341	10.000654	Hamburg, Germany
+-31.4166867	-64.1834193	Córdoba, Argentina
+36.6519754	117.1138479	Jinan, Shandong, China
+20.6720375	-103.338396	Guadalajara, Jalisco, Mexico
+53.5462055	-113.491241	Edmonton, Alberta, Canada
+36.8982165	7.7549272	Annaba, Algeria
+-30.0324999	-51.2303767	Porto Alegre, Rio Grande do Sul, Brazil
+44.4361414	26.1027202	Bucharest, Romania
+44.8178131	20.4568974	Belgrade, Serbia
+50.2885563	18.97044253	Chorzów, Poland
+-1.2832533	36.8172449	Nairobi, Kenya
+39.4697065	-0.3763353	Valencia, Spain
+1.2899175	103.8519072	Singapore, Singapore
+22.6203348	120.3120375	Kaohsiung, Taiwan
+28.1450774	113.2384362	Changsha, Hunan, China
+-33.9288301	18.4172197	Cape Town, Western Cape, South Africa
+42.1418541	24.7499297	Plovdiv, Bulgaria
+52.3730796	4.8924534	Amsterdam, Netherlands
+40.8358846	14.2487679	Naples, Italy
+39.3032619	117.4163641	Tianjin, China
+51.2254018	6.7763137	Düsseldorf, Germany
+41.6934591	44.8014495	Tbilisi, Georgia
+30.5951051	114.2999353	Wuhan, Hubei, China
+49.2608724	-123.113952	Vancouver, British Columbia, Canada
+40.7127281	-74.0060152	New York City, United States
+40.1777112	44.5126233	Yerevan, Armenia
+51.1947131	6.4353792	Mönchengladbach, Germany
+-29.861825	31.009909	Durban, KwaZulu-Natal, South Africa
+35.1799528	129.0752365	Busan, South Korea
+-1.45056	-48.4682453	Belém, Pará, Brazil
+-34.9206797	-57.9537638	La Plata, Argentina
+-34.9281805	138.5999312	Adelaide, South Australia, Australia
+-18.9188041	-48.2767837	Uberlândia, Minas Gerais, Brazil
+43.2630018	-2.9350039	Bilbao, Spain
+36.19924	37.1637253	Aleppo, Syria
+-27.4689682	153.0234991	Brisbane, Queensland, Australia
+54.9738474	-1.6131572	Newcastle upon Tyne, North East, England
+9.7422774	-63.1888854	Maturín, Venezuela
+-25.7459277	28.1879101	Pretoria, Gauteng, South Africa
+26.6499922	106.6246178	Guiyang, Guizhou, China
+40.8400679	111.742171	Hohhot, Inner Mongolia, China
+13.7524938	100.4935089	Bangkok, Thailand
+38.23166	27.02997	İzmir, Turkey
+51.9244424	4.47775	Rotterdam, Netherlands
+25.6802019	-100.315258	Monterrey, Mexico
+34.7501492	137.9246962	Fukuroi, Shizuoka, Japan
+48.2083537	16.3725042	Vienna, Austria
+36.6816175	4.237186047	Tizi Ouzou, Algeria
+18.833333	-98	Puebla, Mexico
+59.366667	18.016667	Solna, Sweden
+37.4443293	-122.1598465	Palo Alto, California, United States
+50.6193174	3.1314002	Villeneuve-d'Ascq, France
+50.8465573	4.351697	Brussels, Belgium
+34.261004	108.9423363	Xi'an, Shaanxi, China
+35.6506036	139.5407066	Chofu, Tokyo, Japan
+41.1494512	-8.6107884	Porto, Portugal
+-12.9822499	-38.4812772	Salvador, Bahia, Brazil
+35.8288284	10.6405254	Sousse, Tunisia
+50.938361	6.959974	Cologne, Germany
+45.7593633	126.6276177	Harbin, Heilongjiang, China
+8.4882267	76.947551	Trivandrum, India
+11.2450558	75.7754716	Kozhikode, India
+26.8381	80.9346001	Lucknow, India
+-36.852095	174.7631803	Auckland, New Zealand
+-8.8272699	13.2439512	Luanda, Angola
+34.7533392	113.6599983	Zhengzhou, Henan, China
+28.6472124	116.0348483	Nanchang, Jiangxi, China
+49.453872	11.077298	Nuremberg, Germany
+32.896672	13.1777923	Tripoli, Libya
+43.8244074	87.6139038	Urumqi, Xinjiang, China
+34.3917241	132.4517589	Hiroshima, Japan
+12.649319	-8.000337	Bamako, Mali
+5.3296461	103.1383265	Kuala Terengganu, Malaysia
+49.4432174	7.7689951	Kaiserslautern, Germany
+33.88922645	35.50255853	Beirut, Lebanon
+38.3301406	140.9753442	Rifu, Miyagi, Japan
+37.456	126.7052	Incheon, South Korea
+52.3744779	9.7385532	Hanover, Germany
+48.8534951	2.3483915	Paris, France
+54.9394665	-1.409016156	Sunderland, Tyne and Wear, England
+-33.4377756	-70.6504502	Santiago, Chile
+-33.9618359	25.6186512	Port Elizabeth, Eastern Cape, South Africa
+33.6938118	73.0651511	Islamabad, Pakistan
+-29.116395	26.215496	Bloemfontein, Free State, South Africa
+34.6937569	135.5014539	Osaka, Japan
+43.6534817	-79.3839347	Toronto, Ontario, Canada
+43.7697955	11.2556404	Florence, Italy
+-34.7033363	-58.3953235	Lanús, Argentina
+11.0101922	-74.82317941	Barranquilla, Colombia
+-7.9959607	-35.039335	São Lourenço da Mata, Pernambuco, Brazil
+-22.1225167	-51.3882528	Presidente Prudente, São Paulo, Brazil
+6.26973245	-75.60255965	Medellín, Colombia
+30.4205162	-9.5838532	Agadir, Morocco
+31.6258257	-7.9891608	Marrakesh, Morocco
+0.3177137	32.5813539	Kampala, Uganda
+51.1263106	16.97819633	Wrocław, Poland
+55.7823547	49.1242266	Kazan, Russia
+-13.5170887	-71.9785356	Cusco, Peru
+34.682268	-0.435755507	Sidi Bel Abbès, Algeria
+-25.966213	32.56745	Maputo, Mozambique
+-7.2459717	112.7378266	Surabaya, East Java, Indonesia
+5.5528455	95.3192908	Banda Aceh, Aceh, Indonesia
+-25.2800459	-57.6343814	Asunción, Paraguay
+33.5945144	-7.6200284	Casablanca, Morocco
+35.5200185	35.7781044	Latakia, Syria
+36.8129564	118.0488401	Zibo, Shandong, China
+36.7071591	119.1557441	Weifang, Shandong, China
+37.461928	121.4425255	Yantai, Shandong, China
+2.723099	101.9400601	Seremban, Malaysia
+34.0346534	-5.0161926	Fes, Morocco
+6.4550575	3.3941795	Lagos, Nigeria
+29.974498	32.537086	Suez, Egypt
+35.083386	137.156412	Toyota City, Aichi, Japan
+24.4538352	54.3774014	Abu Dhabi, United Arab Emirates
+51.3406321	12.3747329	Leipzig, Germany
+-5.0874608	-42.8049571	Teresina, Brazil
+-20.4640173	-54.6162947	Campo Grande, Mato Grosso do Sul, Brazil
+35.5391697	129.3119136	Ulsan, South Korea
+-15.5986686	-56.0991301	Cuiabá, Mato Grosso, Brazil
+-3.1316333	-59.9825041	Manaus, Amazonas, Brazil
+37.2633325	127.0287472	Suwon, South Korea
+0.5262455	101.4515727	Pekanbaru, Riau, Indonesia
+54.3482907	18.6540233	Gdańsk, Poland
+52.4006632	16.91973259	Poznań, Poland
+42.6977028	23.3217359	Sofia, Bulgaria
+57.7072326	11.9670171	Gothenburg, Sweden
+41.494444	121.615278	Jinzhou, China
+8.07761875	-72.4689002	Cúcuta, Colombia
+52.4796992	-1.9026911	Birmingham, West Midlands, England
+4.812181	100.9797908	Perak, Malaysia
+35.8237631	127.1472805	Jeonju, South Korea
+53.0758196	8.8071646	Bremen, Germany
+37.9163757	139.0365062	Niigata, Niigata, Japan
+8.5816963	-71.1658075	Mérida, Venezuela
+36.3497007	127.3849016	Daejeon, South Korea
+44.841225	-0.5800364	Bordeaux, France
+60.1674881	24.9427473	Helsinki, Finland
+-16.680882	-49.2532691	Goiânia, Goiás, Brazil
+3.4519988	-76.5325259	Cali, Colombia
+30.6598628	104.0633717	Chengdu, Sichuan, China
+-25.575404	27.156484	Phokeng, North West, South Africa
+25.7558021	-100.289648	San Nicolás de los Garza, Mexico
+-30.3154739	-61.1645076	Santa Fe, Argentina
+-32.9593609	-60.6617024	Rosario, Argentina
+45.4401467	4.3873058	Saint-Étienne, France
+-23.9058333	29.4613889	Polokwane, South Africa
+8.3223763	-62.6896622	Ciudad Guayana, Venezuela
+-0.2201641	-78.5123274	Quito, Ecuador
+45.0677551	7.6824892	Turin, Piedmont, Italy
+43.061936	141.3542924	Sapporo, Hokkaido, Japan
+37.6581862	126.8319452	Goyang, South Korea
+-16.4955455	-68.1336229	La Paz, Bolivia
+-13.9875107	33.768144	Lilongwe, Malawi
+-25.4729094	30.9772719	Nelspruit, Mpumalanga, South Africa
+10.6498095	-71.6443596	Maracaibo, Venezuela
+35.9661164	140.6450292	Kashima, Ibaraki, Japan
+6.6985605	-1.6233086	Kumasi, Ghana
+-25.4295963	-49.2712724	Curitiba, Paraná, Brazil
+10.0774374	-69.3222293	Barquisimeto, Venezuela
+-34.78709305	-68.43818677	Mendoza, Argentina
+-2.5833851	140.5745105	Nolokla, Indonesia
+35.1594647	126.8515034	Gwangju, South Korea
+21.0283334	105.854041	Hanoi, Vietnam
+-2.5295265	-44.2963942	São Luís, Maranhão, Brazil
+35.7044415	-0.6502981	Oran, Algeria
+25.1566623	51.6013212	Al-Wakrah, Qatar
+-1.2398711	116.8593379	Balikpapan, East Kalimantan, Indonesia
+-5.79334655	112.6598223	Gresik, East Java, Indonesia
+43.5854823	39.723109	Sochi, Russia
+41.767914	-72.644512	East Hartford, Connecticut, United States
+9.9674277	76.2454436	Kochi, India
+2.3293744	102.2880962	Malacca, Malaysia
+22.2739671	114.1886793	So Kon Po, Hong Kong
+5.2625962	100.4304555	Batu Kawan, Malaysia
+5.5571096	-0.2012376	Accra, Ghana
+1.5597561	110.345397	Kuching, Malaysia
+33.1819875	131.4270217	Ōita, Japan
+3.7985637	103.32199	Kuantan, Malaysia
+25.2856329	51.5264162	Doha, Qatar
+0.4086518	9.4418849	Libreville, Gabon
+24.8546842	67.0207055	Karachi, Pakistan
+22.8015194	86.2029579	Jamshedpur, India
+25.0363006	102.7086139	Kunming, Yunnan, China
+28.6581723	121.4163876	Taizhou, Zhejiang, China
+31.1800568	118.2141777	Wuhu, Anhui, China
+23.1125153	114.4127007	Huizhou, Guangdong, China
